@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant & Cafe</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Delight Café</h1>
+        <p>Welcome to the taste of perfection</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+        </ul>
+        <button id="cart-btn">🛒 <span id="cart-count">0</span></button>
+    </nav>
+
+    <main>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item" data-name="Espresso" data-price="30">
+                    <img src="https://source.unsplash.com/120x120/?coffee" alt="Espresso" />
+                    <h3>Espresso</h3>
+                    <p>Strong and aromatic.</p>
+                    <span>₺30</span>
+                    <button class="add-to-cart">Add</button>
+                </div>
+
+                <div class="menu-item" data-name="Burger" data-price="75">
+                    <img src="https://source.unsplash.com/120x120/?burger" alt="Burger" />
+                    <h3>Burger</h3>
+                    <p>Juicy and delicious.</p>
+                    <span>₺75</span>
+                    <button class="add-to-cart">Add</button>
+                </div>
+
+                <div class="menu-item" data-name="Pasta" data-price="65">
+                    <img src="https://source.unsplash.com/120x120/?pasta" alt="Pasta" />
+                    <h3>Pasta</h3>
+                    <p>Italian classic.</p>
+                    <span>₺65</span>
+                    <button class="add-to-cart">Add</button>
+                </div>
+
+                <div class="menu-item" data-name="Cheesecake" data-price="45">
+                    <img src="https://source.unsplash.com/120x120/?cheesecake" alt="Cheesecake" />
+                    <h3>Cheesecake</h3>
+                    <p>Sweet and creamy.</p>
+                    <span>₺45</span>
+                    <button class="add-to-cart">Add</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="https://source.unsplash.com/300x200/?restaurant" alt="Interior">
+                <img src="https://source.unsplash.com/300x200/?cafe" alt="Cafe">
+                <img src="https://source.unsplash.com/300x200/?food" alt="Food">
+            </div>
+        </section>
+
+        <section id="reservation">
+            <h2>Make a Reservation</h2>
+            <form id="reservation-form">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <input type="date" required />
+                <input type="time" required />
+                <button type="submit">Reserve</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- CART MODAL -->
+    <div id="cart-modal" class="hidden">
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: ₺<span id="cart-total">0</span></p>
+            <button id="close-cart">Close</button>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2025 Delight Café. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

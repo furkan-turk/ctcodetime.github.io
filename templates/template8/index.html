@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Courses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Learnify</h1>
+        <p>Empower your future with our online courses</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#video">Course Video</a></li>
+            <li><a href="#certificate">Certificate</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="courses">
+            <h2>Available Courses</h2>
+            <div class="course-list">
+                <div class="course-card" onclick="playVideo('course1.mp4')">
+                    <h3>Web Development</h3>
+                    <p>Learn HTML, CSS, and JavaScript from scratch.</p>
+                </div>
+                <div class="course-card" onclick="playVideo('course2.mp4')">
+                    <h3>Data Science</h3>
+                    <p>Introduction to Python, Machine Learning, and AI.</p>
+                </div>
+                <div class="course-card" onclick="playVideo('course3.mp4')">
+                    <h3>Graphic Design</h3>
+                    <p>Master Photoshop, Illustrator, and Figma.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="video">
+            <h2>Course Video</h2>
+            <video id="courseVideo" width="100%" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="certificate">
+            <h2>Certificate</h2>
+            <p>Complete the course and earn a recognized certificate!</p>
+            <button onclick="alert('You have earned your certificate!')">Download Certificate</button>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
