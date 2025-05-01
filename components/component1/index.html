@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Component</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="login-wrapper">
+        <form class="login-form" onsubmit="handleLogin(event)">
+            <h2>Welcome Back</h2>
+            <input type="text" placeholder="Username" id="username" required />
+            <input type="password" placeholder="Password" id="password" required />
+            <button type="submit">Login</button>
+            <p id="login-status"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
